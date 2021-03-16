@@ -7,13 +7,15 @@
     <title>vue.js</title>
   </head>
   <body>
-    <div id="app">{{message}}</div>
+    <div id="app">
+      <p v-if="error">エラーです</p>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script>
       var app = new Vue({
         el: "#app",
         data: {
-          message: "new vue",
+          error: false,
         },
       });
     </script>
