@@ -8,6 +8,7 @@
   </head>
   <body>
     <did id="app">
+      <button v-on="shuffle">シャッフル</button>
       <ul>
         <li v-for="pref in prefs">{{pref.name}}</li>
       </ul>
@@ -26,6 +27,11 @@
             { name: "山形県" },
           ],
         },
+        methods:{
+          shuffle:function{
+
+          }
+        }
       });
     </script>
   </body>
